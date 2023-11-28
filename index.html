@@ -25,6 +25,11 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Agrega estos scripts al head -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
@@ -433,107 +438,137 @@
     <div class="container-fluid py-5" id="family">
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Friends & Family</h6>
-                <h1 class="font-secondary display-4">Groomsmen & Bridesmaid</h1>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">La Familia del</h6>
+                <h1 class="font-secondary display-4">El Novio & La Novia</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="row">
                 <div class="col-12 text-center mb-2">
                     <ul class="list-inline mb-4" id="portfolio-flters">
                         <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">
-                            Groomsmen</li>
+                            Novio</li>
                         <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">
-                            Bridesmaid</li>
+                            Novia</li>
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="">
+                        <img class="img-fluid w-100" src="img/cata.jpg" alt="">
                         <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <h4 class="mb-3">Cata</h4>
+                            <p class="text-uppercase">La princesa</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://instagram.com/catalinarodriguezcepeda?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="">
+                        <img class="img-fluid w-100" src="img/ruben.jpg" alt="">
                         <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <h4 class="mb-3">Ruben</h4>
+                            <p class="text-uppercase">El suegro</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://instagram.com/rubenklimczuk?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="">
+                        <img class="img-fluid w-100" src="img/papa.jpg" alt="">
                         <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <h4 class="mb-3">El Uru</h4>
+                            <p class="text-uppercase">Papá</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://www.facebook.com/washington.rodrguezrivas?mibextid=9R9pXO"><i class="fab fa-facebook-f"></i></a>                                
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="">
+                        <img class="img-fluid w-100" src="img/elena.jpg" alt="">
                         <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <h4 class="mb-3">Elena</h4>
+                            <p class="text-uppercase">La suegra</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://www.facebook.com/elenanadia.klimczuk?mibextid=9R9pXO"><i class="fab fa-facebook-f"></i></a>                                
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="">
+                        <img class="img-fluid w-100" src="img/carmen.jpg" alt="">
                         <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <h4 class="mb-3">Carmenchu</h4>
+                            <p class="text-uppercase">Mamá</p>
+                            <div class="d-inline-block">                               
+                                <a class="mx-2" href="https://instagram.com/ekbasiscarmen?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative mb-2">
-                        <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="">
+                        <img class="img-fluid w-100" src="img/denis.jpg" alt="">
                         <div class="bg-secondary text-center p-4">
-                            <h4 class="mb-3">Full Name</h4>
-                            <p class="text-uppercase">Best Friend</p>
-                            <div class="d-inline-block">
-                                <a class="mx-2" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <h4 class="mb-3">Denis</h4>
+                            <p class="text-uppercase">Cuñaita</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://instagram.com/deniseklim?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/eva.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Evita</h4>
+                            <p class="text-uppercase">sister</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://instagram.com/titaeva1910?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/eve.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Eve</h4>
+                            <p class="text-uppercase">La Cuña</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://instagram.com/evenklimc?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/lio.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Lio</h4>
+                            <p class="text-uppercase">El pooh</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://instagram.com/lionelfazzini?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                    <div class="position-relative mb-2">
+                        <img class="img-fluid w-100" src="img/sergio.jpg" alt="">
+                        <div class="bg-secondary text-center p-4">
+                            <h4 class="mb-3">Eve</h4>
+                            <p class="text-uppercase">El Cuña</p>
+                            <div class="d-inline-block">                                
+                                <a class="mx-2" href="https://instagram.com/serbat777?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -544,7 +579,7 @@
     <!-- Friends & Family End -->
 
 
-    <!-- RSVP Start -->
+    <!-- RSVP Start
     <div class="container-fluid py-5" id="rsvp">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
@@ -600,7 +635,7 @@
             </div>
         </div>
     </div>
-    <!-- RSVP End -->
+     RSVP End -->
 
 
     <!-- Footer Start -->
@@ -652,8 +687,7 @@
 
     <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
     <script src="js/simplyCountdown.js"></script>
-    <!-- Carga formulario a google -->   
-    <script src="https://apis.google.com/js/api.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
@@ -707,32 +741,29 @@
             }
         });
     </script>
+    <!-- Agrega el nuevo script al head -->
+    <script src="js/firebase.js"></script>
+
+    <!-- Tu script existente -->
+    <script>
+        function submitForm() {
+            // Obtener valores...
+            const name = document.getElementById('nameInput').value;
+            const email = document.getElementById('emailInput').value;
+            const guests = document.getElementById('guestCountInput').value;
+            const event = document.getElementById('attendanceInput').value;
+            const message = document.getElementById('messageInput').value;
+
+            // Llamar a la función para enviar datos a Firebase
+            enviarDatos(name, email, guests, event, message);
+        }
+    </script>
 
 
-<script>
-    function submitForm() {
-        const name = document.getElementById('nameInput').value;
-        const email = document.getElementById('emailInput').value;
-        const guests = document.getElementById('guestCountInput').value;
-        const event = document.getElementById('attendanceInput').value;
-        const message = document.getElementById('messageInput').value;
 
-        // Enviar los datos al servidor mediante una solicitud HTTP
-        const xhr = new XMLHttpRequest();
-        const url = 'lib/guardar_sheet.php';  // Reemplaza con la URL de tu script PHP
-        xhr.open('POST', url, true);
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Manejar la respuesta del servidor si es necesario
-                console.log(xhr.responseText);
-            }
-        };
-        xhr.send(`name=${name}&email=${email}&guests=${guests}&event=${event}&message=${message}`);
-    }
-</script>
 
-</script>
+
+    </script>
 
 
 
